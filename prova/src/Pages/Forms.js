@@ -33,11 +33,8 @@ function Forms() {
                                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with
                                             anyone else.</small>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1" class="input__label">Password</label>
-                                        <input type="password" class="form-control input-style" id="exampleInputPassword1"
-                                            placeholder="Password" />
-                                    </div>
+                                    <Input label="exampleInputPassword1" text="Password"
+                                        type="password" id="exampleInputPassword1" placeholder="Password" />
                                     <div class="form-check check-remember check-me-out">
                                         <input type="checkbox" class="form-check-input checkbox" id="exampleCheck1" />
                                         <label class="form-check-label checkmark" for="exampleCheck1">Check me out</label>
@@ -53,28 +50,19 @@ function Forms() {
                             <div class="card-body">
                                 <form action="#" method="post">
                                     <div class="form-row">
-                                       <Input className="col-md-6" label="inputEmail4" text="Email"
-                                       type="email" id="inputEmail4" placeholder="Email"/>
-                                       
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword4" class="input__label">Password</label>
-                                            <input type="password" class="form-control input-style" id="inputPassword4" placeholder="Password" />
-                                        </div>
+                                        <Input className="col-md-6" label="inputEmail4" text="Email"
+                                            type="email" id="inputEmail4" placeholder="Email" />
+                                        <Input className="col-md-6" label="inputPassword4" text="Password"
+                                            type="password" id="inputPassword4" placeholder="Password" />
+
                                     </div>
-                                    <div class="form-group">
-                                        <label for="inputAddress" class="input__label">Address</label>
-                                        <input type="text" class="form-control input-style" id="inputAddress" placeholder="1234 Main St" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputAddress2" class="input__label">Address 2</label>
-                                        <input type="text" class="form-control input-style" id="inputAddress2"
-                                            placeholder="Apartment, studio, or floor" />
-                                    </div>
+                                    <Input label="inputAddress" text="Adress"
+                                        type="text" id="inputAddress" placeholder="1234 Main St" />
+                                    <Input label="inputAddress2" text="Address 2"
+                                        type="text" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+
                                     <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputCity" class="input__label">City</label>
-                                            <input type="text" class="form-control input-style" id="inputCity" />
-                                        </div>
+                                        <Input className="col-md-6" label="inputCity" text="City" type="text" id="inputCity" />
                                         <div class="form-group col-md-4">
                                             <label for="inputState" class="input__label">State</label>
                                             <select id="inputState" class="form-control input-style">
@@ -82,10 +70,8 @@ function Forms() {
                                                 <option>...</option>
                                             </select>
                                         </div>
-                                        <div class="form-group col-md-2">
-                                            <label for="inputZip" class="input__label">Zip</label>
-                                            <input type="text" class="form-control input-style" id="inputZip" />
-                                        </div>
+                                        <Input className="col-md-2" label="inputZip" text="Zip"
+                                            type="text" id="inputZip" />
                                     </div>
                                     <div class="form-check check-remember check-me-out">
                                         <input class="form-check-input checkbox" type="checkbox" id="gridCheck" />
@@ -97,21 +83,9 @@ function Forms() {
                                 </form>
                             </div>
                         </div>
-                        {/* <!-- //forms 2 --> */}
-
-
-
                     </section>
-                    {/* <!-- //forms --> */}
                 </div>
-                {/* <!-- //forms  --> */}
-
             </div>
-            {/* <!-- //content --> */}
-
-
-            {/* <!-- main content end-- > */}
-            
         </>
     );
 }

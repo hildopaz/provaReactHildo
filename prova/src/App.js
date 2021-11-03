@@ -7,19 +7,16 @@ import './assets/css/style.css'
 import Sidebar from "./components/template/Sidebar";
 import Header from "./components/template/Header";
 import Footer from "./components/template/Footer";
-import ToggleMenu from "./components/template/Sidebar";
 
 function App() {
   return (
     <div className="sidebar-menu-collapsed">
-       <Router>
-      <Sidebar/>
-      <ToggleMenu/>
-      <Header/>
-     
-        <Routes/>
+      <Router>
+        <Sidebar />
+        <Routes />
       </Router>
-      <Footer/>
+        <Header />
+      <Footer />
     </div>
   );
 }
