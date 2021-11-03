@@ -1,12 +1,17 @@
-import React from 'react';
-import Index from './Pages/Home'
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
+import { Routes } from './routes'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
   return (
     <>
-   <h1>Aoba</h1>
-    <Index/>
+      <Router>
+        <Routes/>
+      </Router>
+
     </>
   );
 }
