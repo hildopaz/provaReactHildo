@@ -12,10 +12,11 @@ import ToggleMenu from "./components/template/Sidebar";
 function App() {
   return (
     <div className="sidebar-menu-collapsed">
+       <Router>
       <Sidebar/>
       <ToggleMenu/>
       <Header/>
-      <Router>
+     
         <Routes/>
       </Router>
       <Footer/>
