@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from '../components/template/Header';
-import Sidebar from '../components/template/Sidebar';
+import Input from '../components/micro/Input';
 
 function Forms() {
     return (
@@ -54,10 +53,9 @@ function Forms() {
                             <div class="card-body">
                                 <form action="#" method="post">
                                     <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputEmail4" class="input__label">Email</label>
-                                            <input type="email" class="form-control input-style" id="inputEmail4" placeholder="Email" />
-                                        </div>
+                                       <Input className="col-md-6" label="inputEmail4" text="Email"
+                                       type="email" id="inputEmail4" placeholder="Email"/>
+                                       
                                         <div class="form-group col-md-6">
                                             <label for="inputPassword4" class="input__label">Password</label>
                                             <input type="password" class="form-control input-style" id="inputPassword4" placeholder="Password" />
